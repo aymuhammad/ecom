@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import make_password
 from django.shortcuts import redirect, render
 from django.views import View
-from store.models.customer import Customer
+from store.models import Customer
 
 
 class Signup (View):
