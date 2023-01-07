@@ -1,7 +1,7 @@
 from django.shortcuts import HttpResponseRedirect, redirect, render
 from django.views import View
-from store.models.category import Category
-from store.models.products import Products
+from store.models import Category
+from store.models import Products
 
 
 # Create your views here.
