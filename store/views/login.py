@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import check_password
 from django.shortcuts import HttpResponseRedirect, redirect, render
 from django.views import View
-from store.models.customer import Customer
+from store.models import Customer
 
 
 class Login(View):
