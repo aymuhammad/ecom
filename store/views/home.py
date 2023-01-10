@@ -3,7 +3,6 @@ from django.views import View
 from store.models import Category
 from store.models import Products
 
-
 # Create your views here.
 class Index(View):
 
@@ -35,7 +34,6 @@ class Index(View):
 	def get(self, request):
 		# print()
 		return HttpResponseRedirect(f'/store{request.get_full_path()[1:]}')
-
 
 def store(request):
 	cart = request.session.get('cart')
